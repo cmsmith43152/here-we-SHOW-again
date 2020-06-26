@@ -54,7 +54,7 @@ while (counter4 <= 20) {
 counter4 += 1 
 }
 
-
+//Kata5
 const kata5Heading = document.createElement('h3')
 parentElement.append(kata5Heading)
 kata5Heading.append('Kata 5')
@@ -67,7 +67,7 @@ counter5 += 1
 }
 
 
-
+//Kata6
 const kata6Heading = document.createElement('h3')
 parentElement.append(kata6Heading)
 kata6Heading.append('Kata 6')
@@ -79,6 +79,7 @@ while (counter6 >= 1) {
 counter6 -= 1 
 }
 
+//Kata7
 const kata7Heading = document.createElement('h3')
 parentElement.append(kata7Heading)
 kata7Heading.append('Kata 7')
@@ -120,12 +121,12 @@ counter9 -= 1
 const kata10Heading = document.createElement('h3')
 parentElement.append(kata10Heading)
 kata10Heading.append('Kata 10')
-let counter10 = 1
-while (counter10 <= 10) {
+let counter10 = 10
+while (counter10 >= 1) {
  let newElement = document.createElement ('p')
  newElement.append(counter10*counter10)
  parentElement.append(newElement)
-counter10 += 1 
+counter10 -= 1 
 }
 
 
@@ -182,14 +183,14 @@ parentElement.append(kata14Heading)
 kata14Heading.append('Kata 14')
 let counter14 = 0 //name of variable(counter14)
 while (counter14 < sampleArray.length) {
-    if(sampleArray[counter14*counter14]) {
-        let newElement = document.createElement ('p')
-        newElement.append(sampleArray[counter14])
+    let newElement = document.createElement ('p')
+        newElement.append(sampleArray[counter14]*sampleArray[counter14])
         parentElement.append(newElement)
 
+        counter14 += 1 
     }
-    counter14 += 1 
-}
+   
+
 
     //KATA15
 
@@ -199,11 +200,12 @@ kata15Heading.append('Kata 15')
 let sum = 0 
 for (counter15 = 0; counter15  <= 20; counter15 +=1) {
    sum += counter15
-    let newElement = document.createElement ('p')
-        newElement.append(sum)
-        parentElement.append(newElement)
+}
+    let newElement15 = document.createElement ('p')
+        newElement15.append(sum)
+        parentElement.append(newElement15)
     
-}   
+   
 
 //KATA 16
 
@@ -213,12 +215,12 @@ kata16Heading.append('Kata 16')
 let sum2 = 0 //name of variable(counter16)
 for (counter16  = 0; counter16 <= sampleArray.length - 1; counter16 += 1) {
     sum2 += sampleArray[counter16]  
-
-        let newElement = document.createElement ('p')
-        newElement.append(sum2)
-        parentElement.append(newElement)
-
 }
+        let newElement16 = document.createElement ('p')
+        newElement16.append(sum2)
+        parentElement.append(newElement16)
+
+
 //KATA 17
 
 const kata17Heading = document.createElement('h3')
